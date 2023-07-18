@@ -1,4 +1,24 @@
 return {
+  "folke/flash.nvim",
+  event = "VeryLazy",
+  keys = {
+    { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+    { "S", mode = { "n", "o", "x" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+    { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
+    {
+      "R",
+      mode = { "o", "x" },
+      function() require("flash").treesitter_search() end,
+      desc = "Treesitter Search",
+    },
+    {
+      "<c-a>",
+      mode = { "c" },
+      function() require("flash").toggle() end,
+      desc = "Toggle Flash Search",
+    },
+  },
+  opts = {},
   modes = {
     -- a regular search with `/` or `?`
     search = {
@@ -14,6 +34,7 @@ return {
       },
     },
   },
+  jump = { autojump = true },
   label = {
     -- allow uppercase labels
     uppercase = true,
@@ -26,7 +47,7 @@ return {
     -- Enable this to use rainbow colors to highlight labels
     -- Can be useful for visualizing Treesitter ranges.
     rainbow = {
-      enabled = true,
+      enabled = false,
       -- number between 1 and 9
       shade = 7,
     },

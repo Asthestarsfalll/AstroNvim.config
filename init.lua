@@ -18,8 +18,8 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "tokyonight",
-  -- colorscheme = "rose-pine",
+  -- colorscheme = "tokyonight",
+  colorscheme = "rose-pine",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {

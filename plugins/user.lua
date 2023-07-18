@@ -9,9 +9,9 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-
   {
     "wakatime/vim-wakatime",
+    event = "VimEnter",
   },
   "folke/tokyonight.nvim",
   {
@@ -30,30 +30,12 @@ return {
   },
 
   -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  {
-    "folke/flash.nvim",
-    event = "VeryLazy",
-    keys = {
-      { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
-      { "S", mode = { "n", "o", "x" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
-      { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
-      {
-        "R",
-        mode = { "o", "x" },
-        function() require("flash").treesitter_search() end,
-        desc = "Treesitter Search",
-      },
-      {
-        "<c-a>",
-        mode = { "c" },
-        function() require("flash").toggle() end,
-        desc = "Toggle Flash Search",
-      },
-    },
-  },
 
   "folke/tokyonight.nvim",
-  "h-hg/fcitx.nvim",
+  {
+    "h-hg/fcitx.nvim",
+    event = "VeryLazy",
+  },
 
   {
     "0x00-ketsu/maximizer.nvim",
@@ -73,6 +55,34 @@ return {
     config = function()
       require("nvim-surround").setup {
         -- Configuration here, or leave empty to use defaults
+      }
+    end,
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    event = "VeryLazy",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
+  },
+  {
+    "folke/zen-mode.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+  },
+
+  {
+    "ahmedkhalf/project.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("project_nvim").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
       }
     end,
   },
