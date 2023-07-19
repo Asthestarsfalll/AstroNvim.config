@@ -20,10 +20,11 @@ return {
     config = function()
       require("rose-pine").setup {
         highlight_groups = {
-          ColorColumn = { bg = "rose" },
+          Search = { bg = "love" },
+          Substitute = { bg = "love" },
           -- Blend colours against the "base" background
-          CursorLine = { bg = "foam", blend = 10 },
-          StatusLine = { fg = "love", bg = "love", blend = 10 },
+          CursorLine = { bg = "iris", blend = 15 },
+          StatusLine = { fg = "love", bg = "love", blend = 15 },
         },
       }
     end,
