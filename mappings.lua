@@ -39,12 +39,20 @@ return {
 
     -- Cursorline
     ["<leader>Ou"] = { "<cmd>highlight CursorLine gui=underline cterm=underline<cr>", desc = "CursorLine Underine" },
-    ["<leader>Or"] = { "<cmd>:highlight CursorLine gui=reverse cterm=reverse<cr>", desc = "CursorLine Reverse" },
+    ["<leader>Or"] = { "<cmd>highlight CursorLine gui=reverse cterm=reverse<cr>", desc = "CursorLine Reverse" },
 
     -- maximizer
-    ["mt"] = { "<cmd>lua require('maximizer').toggle()<CR>" },
-    ["mn"] = { "<cmd>lua require('maximizer').maximize()<CR>" },
+    ["mt"]= { "<cmd>lua require('maximizer').toggle()<CR>" },
+    ["mn"] =    { "<cmd>lua require('maximizer').maximize()<CR>" },
     ["mr"] = { "<cmd>lua require('maximizer').restore()<CR>" },
+
+    ["ga"] = { "<cmd>EasyAlign<CR>" },
+  },
+  v = {
+    ["ga"] = { "<cmd>EasyAlign<CR>" },
+  },
+  t = {
+    ["<C-\\>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
   },
   i = {
     -- setting a mapping to false will disable it

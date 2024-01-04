@@ -1,30 +1,4 @@
 return {
-  plugins = {
-    {
-      "rebelot/heirline.nvim",
-      opts = function(_, opts)
-        local status = require "astronvim.utils.status"
-        opts.statusline = { -- statusline
-          hl = { fg = "fg", bg = "bg" },
-          status.component.mode { mode_text = { padding = { left = 1, right = 1 } } }, -- add the mode text
-          status.component.git_branch(),
-          status.component.file_info { filetype = {}, filename = false, file_modified = false },
-          status.component.git_diff(),
-          status.component.diagnostics(),
-          status.component.fill(),
-          status.component.cmd_info(),
-          status.component.fill(),
-          status.component.lsp(),
-          status.component.treesitter(),
-          status.component.nav(),
-          -- remove the 2nd mode indicator on the right
-        }
-
-        -- return the final configuration table
-        return opts
-      end,
-    },
-  },
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
@@ -58,7 +32,7 @@ return {
     formatting = {
       -- control auto formatting on save
       format_on_save = {
-        enabled = true, -- enable or disable format on save globally
+        enabled = false, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
         },
@@ -77,7 +51,8 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "pyright",
+      "clangd",
     },
   },
 
