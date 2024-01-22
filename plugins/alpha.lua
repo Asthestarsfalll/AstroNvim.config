@@ -58,28 +58,12 @@ WEEKDAYS = {
     "███████║╚██████╔╝██║ ╚████║██████╔╝██║  ██║   ██║   ",
     "╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝   ╚═╝   ",
   },
-  {
-    "⠀⠀⠀⠀⠀⠀⢠⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀",
-    "⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀",
-    "⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀",
-    "⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀",
-    "⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀",
-    "⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀",
-    "⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀",
-    "⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀",
-    "⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀",
-    "⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣛⡛⠛⠿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠛⢛⡛⣻⣿⣿⣿⣿⡏⠀⠀⠀",
-    "⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣷⣶⠶⢄⣷⣿⣿⣿⣿⣿⣿⣿⣷⡦⠤⢀⣾⣷⣿⣿⣿⣿⣿⡇⠀⠀⠀",
-    "⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣔⣽⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀",
-    "⠀⠀⠈⢻⣿⣿⣿⣏⠉⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢸⣿⣿⣿⣿⡇⠀⠀⠀",
-    "⠀⠀⠀⠀⠻⣿⣿⣿⠀⠌⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⢸⣿⣿⣿⣿⡇⠀⠀⠀",
-    "⠀⠀⠀⠀⠀⠙⣿⣿⠁⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⢸⣿⣿⣿⣿⡇⠀⠀⠀",
-    "⠀⠀⠀⠀⠀⠀⠈⢻⡇⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⠀⠀⠀⢸⣿⣿⣿⣿⡇⠀⠀⠀",
-    "⠀⠀⠀⠀⠀⠀⠀⠈⠇⠀⠀⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠉⠀⠀⠀⠀⠀⢸⣿⣿⣿⢿⡇⠀⠀⠀",
-    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⠉⠙⠻⠿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⡿⢸⠃⠀⠀⠀",
-    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠉⠻⣿⣿⣿⣟⣟⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇⠘⠀⠀⠀⠀",
-    "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡆⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀⠀⠀⠀",
-  },
+}
+ANIME = {
+  { "02.txt", 54, 26 },
+  { "Lucy.txt", 46, 21 },
+  { "Ayanami.txt", 59, 32 },
+  { "Asuka.txt", 167, 34 },
 }
 
 local function getDayOfWeek()
@@ -93,28 +77,34 @@ return {
   cmd = "Alpha",
   opts = function()
     local dashboard = require "alpha.themes.dashboard"
-    if math.random() > 0.5 then
-      dashboard.section.header.val = WEEKDAYS[getDayOfWeek()]
-    else
-      dashboard.section.header.val = WEEKDAYS[8]
-    end
-
-    dashboard.section.header.opts.hl = "DashboardHeader"
+    require "alpha.term"
 
     local button = require("astronvim.utils").alpha_button
     local get_icon = require("astronvim.utils").get_icon
-    dashboard.section.buttons.val = {
-      button("LDR n  ", get_icon("FileNew", 2, true) .. "New File  "),
-      button("LDR f f", get_icon("Search", 2, true) .. "Find File  "),
-      button("LDR f o", get_icon("DefaultFile", 2, true) .. "Recents  "),
-      button("LDR f w", get_icon("WordFile", 2, true) .. "Find Word  "),
-      button("LDR f '", get_icon("Bookmarks", 2, true) .. "Bookmarks  "),
-      button("LDR S l", get_icon("Refresh", 2, true) .. "Last Session  "),
-    }
 
-    dashboard.config.layout[1].val = vim.fn.max { 2, vim.fn.floor(vim.fn.winheight(0) * 0.2) }
-    dashboard.config.layout[3].val = 5
-    dashboard.config.opts.noautocmd = true
+    -- dashboard.section.header.val = WEEKDAYS[getDayOfWeek()]
+
+    dashboard.opts.opts.noautocmd = true
+    dashboard.section.terminal.opts.redraw = true
+    local idx = math.random(1, #ANIME)
+    idx = 4
+    local info = ANIME[idx]
+    dashboard.section.terminal.command = "cat " .. os.getenv "HOME" .. "/.config/nvim/lua/user/plugins/" .. info[1]
+    dashboard.section.terminal.width = info[2]
+    dashboard.section.terminal.height = info[3]
+
+    if idx == #ANIME then
+      dashboard.section.buttons.val = {
+        button("LDR S l", get_icon("Refresh", 2, true) .. "Last Session  "),
+      }
+    end
+
+    dashboard.opts.layout = {
+      dashboard.section.terminal,
+      { type = "padding", val = 2 },
+      dashboard.section.buttons,
+      dashboard.section.footer,
+    }
     return dashboard
   end,
   config = function(_, opts)
