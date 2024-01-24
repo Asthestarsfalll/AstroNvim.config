@@ -64,6 +64,14 @@ ANIME = {
   { "Lucy.txt", 46, 21 },
   { "Ayanami.txt", 59, 32 },
   { "Asuka.txt", 167, 34 },
+  { "02_gif.txt", 84, 26 },
+  { "02_1_gif.txt", 81, 25 },
+  { "02_2_gif.txt", 81, 25 },
+  { "02_3_gif.txt", 88, 27 },
+  { "02_4_gif.txt", 86, 27 },
+  { "02_5_gif.txt", 81, 25 },
+  { "02_6_gif.txt", 81, 25 },
+
 }
 
 local function getDayOfWeek()
@@ -88,11 +96,16 @@ return {
     dashboard.section.terminal.opts.redraw = true
     local idx = math.random(1, #ANIME)
     local info = ANIME[idx]
-    dashboard.section.terminal.command = "cat " .. os.getenv "HOME" .. "/.config/nvim/lua/user/plugins/" .. info[1]
+    path = os.getenv "HOME" .. "/.config/nvim/lua/user/plugins/"
+    if idx > 4 then
+      dashboard.section.terminal.command = "sh " .. path .. "show.sh " .. path .. info[1]
+    else
+      dashboard.section.terminal.command = "cat " .. path .. info[1]
+    end
     dashboard.section.terminal.width = info[2]
     dashboard.section.terminal.height = info[3]
 
-    if idx == #ANIME then
+    if idx == 4 then
       dashboard.section.buttons.val = {
         button("LDR S l", get_icon("Refresh", 2, true) .. "Last Session  "),
       }
