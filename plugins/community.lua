@@ -12,6 +12,5 @@ return {
 
   { import = "astrocommunity.color.mini-hipatterns" },
   { import = "astrocommunity.color.tint-nvim" },
-  { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.color.vim-highlighter" },
 }

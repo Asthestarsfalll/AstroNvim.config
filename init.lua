@@ -20,7 +20,7 @@ return {
   -- Set colorscheme to use
   -- colorscheme = "tokyonight",
   colorscheme = "rose-pine",
-
+  transparent = true,
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,

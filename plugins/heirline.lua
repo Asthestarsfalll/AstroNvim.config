@@ -17,7 +17,6 @@ return {
       status.component.nav(),
       -- remove the 2nd mode indicator on the right
     }
-
     -- return the final configuration table
     return opts
   end,

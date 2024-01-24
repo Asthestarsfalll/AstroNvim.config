@@ -87,7 +87,6 @@ return {
     dashboard.opts.opts.noautocmd = true
     dashboard.section.terminal.opts.redraw = true
     local idx = math.random(1, #ANIME)
-    idx = 4
     local info = ANIME[idx]
     dashboard.section.terminal.command = "cat " .. os.getenv "HOME" .. "/.config/nvim/lua/user/plugins/" .. info[1]
     dashboard.section.terminal.width = info[2]

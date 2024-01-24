@@ -42,11 +42,13 @@ return {
     ["<leader>Or"] = { "<cmd>highlight CursorLine gui=reverse cterm=reverse<cr>", desc = "CursorLine Reverse" },
 
     -- maximizer
-    ["mt"]= { "<cmd>lua require('maximizer').toggle()<CR>" },
-    ["mn"] =    { "<cmd>lua require('maximizer').maximize()<CR>" },
+    ["mt"] = { "<cmd>lua require('maximizer').toggle()<CR>" },
+    ["mn"] = { "<cmd>lua require('maximizer').maximize()<CR>" },
     ["mr"] = { "<cmd>lua require('maximizer').restore()<CR>" },
 
     ["ga"] = { "<cmd>EasyAlign<CR>" },
+
+    ["<leader>ln"] = { "<cmd>NoiceDismiss<CR>" },
   },
   v = {
     ["ga"] = { "<cmd>EasyAlign<CR>" },
