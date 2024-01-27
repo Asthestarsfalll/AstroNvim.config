@@ -1,19 +1,8 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
   {
     "wakatime/vim-wakatime",
     event = "VimEnter",
   },
-  "folke/tokyonight.nvim",
   {
     "rose-pine/neovim",
     as = "rose-pine",
@@ -29,7 +18,7 @@ return {
     end,
   },
 
-  -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
   "folke/tokyonight.nvim",
   {
@@ -144,4 +133,85 @@ return {
     end,
   },
   { "f-person/git-blame.nvim" },
+  {
+    "karb94/neoscroll.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("neoscroll").setup {
+        -- All these keys will be mapped to their corresponding default scrolling animation
+        mappings = { "<C-u>", "<C-d>", "<C-b>", "<C-f>", "<C-y>", "<C-e>", "zt", "zz", "zb" },
+        hide_cursor = true, -- Hide cursor while scrolling
+        stop_eof = true, -- Stop at <EOF> when scrolling downwards
+        respect_scrolloff = false, -- Stop scrolling when the cursor reaches the scrolloff margin of the file
+        cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
+        easing_function = nil, -- Default easing function
+        pre_hook = nil, -- Function to run before the scrolling animation starts
+        post_hook = nil, -- Function to run after the scrolling animation ends
+        performance_mode = false, -- Disable "Performance Mode" on all buffers.
+      }
+    end,
+  },
+  { "akinsho/horizon.nvim", version = "*", config = function() require("horizon").setup {} end },
+  {
+    "simonmclean/triptych.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "nvim-lua/plenary.nvim", -- required
+      "nvim-tree/nvim-web-devicons", -- optional
+    },
+    config = function()
+      require("triptych").setup {
+        mappings = {
+          -- Everything below is buffer-local, meaning it will only apply to Triptych windows
+          show_help = "g?",
+          jump_to_cwd = ".", -- Pressing again will toggle back
+          nav_left = "h",
+          nav_right = { "l", "<CR>" },
+          delete = "d",
+          add = "a",
+          copy = "c",
+          rename = "r",
+          cut = "x",
+          paste = "p",
+          quit = "q",
+          toggle_hidden = "<leader>.",
+        },
+        extension_mappings = {},
+        options = {
+          dirs_first = true,
+          show_hidden = false,
+          line_numbers = {
+            enabled = true,
+            relative = false,
+          },
+          file_icons = {
+            enabled = true,
+            directory_icon = "",
+            fallback_file_icon = "",
+          },
+          column_widths = { 0.25, 0.25, 0.5 }, -- Must add up to 1 after rounding to 2 decimal places
+          highlights = { -- Highlight groups to use. See `:highlight` or `:h highlight`
+            file_names = "NONE",
+            directory_names = "NONE",
+          },
+          syntax_highlighting = { -- Applies to file previews
+            enabled = true,
+            debounce_ms = 100,
+          },
+        },
+        git_signs = {
+          enabled = true,
+          signs = {
+            add = "+",
+            modify = "~",
+            rename = "r",
+            untracked = "?",
+          },
+        },
+        diagnostic_signs = {
+          enabled = true,
+        },
+      }
+    end,
+  },
 }
