@@ -3,6 +3,9 @@ return {
   event = "BufEnter",
   main = "ibl",
   opts = {
+    scope = {
+      enabled = true,
+    },
     exclude = {
       filetypes = {
         "dashboard",

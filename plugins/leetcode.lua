@@ -1,4 +1,4 @@
-local leet_arg = "leetcode.nvim"
+local leet_arg = "leet"
 return {
   "kawre/leetcode.nvim",
   build = ":TSUpdate html",
@@ -15,7 +15,7 @@ return {
     arg = leet_arg,
     lang = "cpp",
     debug = true,
-    image_support = true,
+    image_support = false,
     cache = { update_interval = 60 * 60 },
     cn = {
       enabled = true,
