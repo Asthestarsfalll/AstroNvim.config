@@ -47,7 +47,7 @@ return {
     -- maximizer
     ["mt"] = { "<cmd>lua require('maximizer').toggle()<CR>" },
     ["mn"] = { "<cmd>lua require('maximizer').maximize()<CR>" },
-    ["MR"] = { "<CMD>LUA REQUIRE('MAXIMIZER').RESTORE()<cr>" },
+    ["mr"] = { "<cmd>lua require('maximizer').restore()<CR>" },
 
     ["ga"] = { "<cmd>EasyAlign<CR>" },
 
