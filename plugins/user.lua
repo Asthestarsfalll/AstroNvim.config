@@ -99,7 +99,6 @@ return {
         -- Enable cursorline initially, and disable cursorline for inactive windows
         -- or ignored filetypes
         set_cursorline = true,
-
         -- Enable line number highlights to match cursorline
         set_number = true,
 
@@ -151,7 +150,6 @@ return {
       }
     end,
   },
-  { "akinsho/horizon.nvim", version = "*", config = function() require("horizon").setup {} end },
   {
     "simonmclean/triptych.nvim",
     event = "VeryLazy",
@@ -211,6 +209,24 @@ return {
         diagnostic_signs = {
           enabled = true,
         },
+      }
+    end,
+  },
+  { "LudoPinelli/comment-box.nvim" },
+  {
+    "Asthestarsfalll/excore.nvim",
+    dir = "/home/czh/.config/nvim/excore.nvim",
+    name = "excore",
+    dev = true,
+    event = "VeryLazy",
+    config = function() require("excore").setup { t = 1 } end,
+  },
+  {
+    "Asthestarsfalll/excore.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("excore").setup {
+        cache_dir = nil,
       }
     end,
   },

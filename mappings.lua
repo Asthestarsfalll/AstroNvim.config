@@ -8,7 +8,9 @@ return {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
+    ["<leader>r"] = { "<cmd>RustRun<cr>" },
     ["<leader>-"] = { "<cmd>Triptych<cr>" },
+    ["<leader>="] = { "<cmd>Navbuddy<cr>" },
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
@@ -45,11 +47,12 @@ return {
     -- maximizer
     ["mt"] = { "<cmd>lua require('maximizer').toggle()<CR>" },
     ["mn"] = { "<cmd>lua require('maximizer').maximize()<CR>" },
-    ["mr"] = { "<cmd>lua require('maximizer').restore()<CR>" },
+    ["MR"] = { "<CMD>LUA REQUIRE('MAXIMIZER').RESTORE()<cr>" },
 
     ["ga"] = { "<cmd>EasyAlign<CR>" },
 
     ["<leader>ln"] = { "<cmd>NoiceDismiss<CR>" },
+    ["ge"] = { "<cmd>ToClass<CR>" },
   },
   v = {
     ["ga"] = { "<cmd>EasyAlign<CR>" },

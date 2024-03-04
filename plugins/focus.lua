@@ -1,6 +1,6 @@
 return {
     "nvim-focus/focus.nvim", version = false,
-    envent='VeryLazy',
+    envent='BufEnter',
     enable = true, -- Enable module
     commands = true, -- Create Focus commands
     autoresize = {
@@ -16,7 +16,7 @@ return {
         tmux = false, -- Create tmux splits instead of neovim splits
     },
     ui = {
-        number = false, -- Display line numbers in the focussed window only
+        number = true, -- Display line numbers in the focussed window only
         relativenumber = true, -- Display relative line numbers in the focussed window only
         hybridnumber = false, -- Display hybrid line numbers in the focussed window only
         absolutenumber_unfocussed = false, -- Preserve absolute numbers in the unfocussed windows

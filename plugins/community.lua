@@ -6,11 +6,10 @@ return {
 
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
-  { import = "astrocommunity.bars-and-lines.statuscol-nvim" },
+  -- { import = "astrocommunity.bars-and-lines.statuscol-nvim" },
   { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.color.headlines-nvim" },
 
   { import = "astrocommunity.color.mini-hipatterns" },
   { import = "astrocommunity.color.tint-nvim" },
-  { import = "astrocommunity.color.vim-highlighter" },
 }

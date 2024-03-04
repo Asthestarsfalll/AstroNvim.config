@@ -1,5 +1,6 @@
 return {
   "3rd/image.nvim",
+  enabled = false,
   config = function()
     require("image").setup {
       backend = "kitty",

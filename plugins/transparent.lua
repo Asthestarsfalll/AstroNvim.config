@@ -31,17 +31,20 @@ return {
         -- "StatusLine",
         -- "StatusLineNC",
         -- "EndOfBuffer",
+        -- "TabLine",
+        -- "TabLineSel",
+        -- "TabLineFill",
       },
       extra_groups = {
         "NormalFloat",
         "NvimTreeNormal",
       },
-      exclude_groups = {
-        "CursorLine",
-        "CursorLineNr",
-        "StatusLine",
-        "TabLine",
-      },
+      --   exclude_groups = {
+      --     "CursorLine",
+      --     "CursorLineNr",
+      --     "StatusLine",
+      --     "TabLine",
+      --   },
     }
     transparent.clear_prefix "BufferLine"
     transparent.clear_prefix "NeoTree"
