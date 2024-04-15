@@ -1,6 +1,6 @@
 return {
   "lukas-reineke/indent-blankline.nvim",
-  event = "BufEnter",
+  event = "User TrueLoad",
   main = "ibl",
   opts = {
     scope = {

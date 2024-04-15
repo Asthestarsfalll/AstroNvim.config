@@ -9,7 +9,6 @@ return {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
     ["<leader>r"] = { "<cmd>RustRun<cr>" },
-    ["<leader>-"] = { "<cmd>Triptych<cr>" },
     ["<leader>="] = { "<cmd>Navbuddy<cr>" },
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {

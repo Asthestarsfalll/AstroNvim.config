@@ -1,6 +1,6 @@
 return {
   "folke/trouble.nvim",
-  event = "VeryLazy",
+  event = "User TrueLoad",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = {
     -- your configuration comes here

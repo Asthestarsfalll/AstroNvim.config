@@ -5,6 +5,7 @@ return {
   },
   {
     "rose-pine/neovim",
+    event = "User TrueLoad",
     as = "rose-pine",
     config = function()
       require("rose-pine").setup {
@@ -23,7 +24,7 @@ return {
   "folke/tokyonight.nvim",
   {
     "h-hg/fcitx.nvim",
-    event = "VeryLazy",
+    event = "User TrueLoad",
   },
 
   {
@@ -40,7 +41,7 @@ return {
   {
     "kylechui/nvim-surround",
     -- version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
+    event = "User TrueLoad",
     config = function()
       require("nvim-surround").setup {
         -- Configuration here, or leave empty to use defaults
@@ -50,13 +51,13 @@ return {
 
   {
     "folke/todo-comments.nvim",
-    event = "VeryLazy",
+    event = "User TrueLoad",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
   },
   {
     "folke/zen-mode.nvim",
-    event = "VeryLazy",
+    event = "User TrueLoad",
     opts = {
       -- your configuration comes here
       -- or leave it empty to use the default settings
@@ -66,6 +67,7 @@ return {
 
   {
     "ahmedkhalf/project.nvim",
+    enabled = false,
     event = "VeryLazy",
     config = function()
       require("project_nvim").setup {
@@ -77,7 +79,7 @@ return {
   },
   {
     "mvllow/modes.nvim",
-    event = "VeryLazy",
+    event = "User TrueLoad",
     tag = "v0.2.0",
     config = function()
       require("modes").setup {
@@ -134,7 +136,7 @@ return {
   { "f-person/git-blame.nvim" },
   {
     "karb94/neoscroll.nvim",
-    event = "VeryLazy",
+    event = "User TrueLoad",
     config = function()
       require("neoscroll").setup {
         -- All these keys will be mapped to their corresponding default scrolling animation
@@ -152,7 +154,7 @@ return {
   },
   {
     "simonmclean/triptych.nvim",
-    event = "VeryLazy",
+    event = "User TrueLoad",
     dependencies = {
       "nvim-lua/plenary.nvim", -- required
       "nvim-tree/nvim-web-devicons", -- optional
@@ -211,22 +213,50 @@ return {
         },
       }
     end,
+    keys = {
+      { "<leader>-", ":Triptych<CR>", desc = "pick close", silent = true, noremap = true },
+    },
   },
   { "LudoPinelli/comment-box.nvim" },
   {
     "Asthestarsfalll/excore.nvim",
-    dir = "/home/czh/.config/nvim/excore.nvim",
-    name = "excore",
-    dev = true,
-    event = "VeryLazy",
-    config = function() require("excore").setup { t = 1 } end,
-  },
-  {
-    "Asthestarsfalll/excore.nvim",
-    event = "VeryLazy",
+    ft = "toml",
+    event = "User TrueLoad",
     config = function()
       require("excore").setup {
         cache_dir = nil,
+      }
+    end,
+  },
+
+  {
+    "rebelot/heirline.nvim",
+    event = "User TrueLoad",
+  },
+  {
+    "nvim-tree/nvim-web-devicons",
+    event = "User TrueLoad",
+  },
+  {
+    "NeogitOrg/neogit",
+    event = "User TrueLoad",
+    dependencies = {
+      "nvim-lua/plenary.nvim", -- required
+      "sindrets/diffview.nvim", -- optional - Diff integration
+      -- Only one of these is needed, not both.
+      "nvim-telescope/telescope.nvim", -- optional
+      -- "ibhagwan/fzf-lua", -- optional
+    },
+    config = true,
+    -- config = function() require("neogit").setup {} end,
+  },
+
+  {
+    "sindrets/diffview.nvim",
+    event = "User TrueLoad",
+    config = function()
+      require("diffview").setup {
+        enhanced_diff_hl = true,
       }
     end,
   },

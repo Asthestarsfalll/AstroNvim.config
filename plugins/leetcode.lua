@@ -1,6 +1,7 @@
 local leet_arg = "leet"
 return {
   "kawre/leetcode.nvim",
+  event="User TrueLoad",
   build = ":TSUpdate html",
   dependencies = {
     "nvim-telescope/telescope.nvim",

@@ -1,6 +1,7 @@
 local prefix = "<leader>u"
 return {
   "xiyaowong/transparent.nvim",
+  -- envent="User TrueLoad",
   lazy = false,
   config = function()
     local transparent = require "transparent"

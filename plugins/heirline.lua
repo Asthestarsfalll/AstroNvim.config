@@ -1,5 +1,6 @@
 return {
   "rebelot/heirline.nvim",
+  event = "User TrueLoad",
   opts = function(_, opts)
     local status = require "astronvim.utils.status"
     opts.statusline = { -- statusline
