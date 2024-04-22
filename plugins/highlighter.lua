@@ -6,7 +6,7 @@ return {
     -- These are basing keymaps to guide new users
     { "f<Enter>", desc = "Highlight" },
     { "f<BS>", desc = "Remove Highlight" },
-    { "f<C-O>", desc = "Clear Highlight" },
+    -- { "f<>", desc = "Clear Highlight" },
     { "f<Tab>", desc = "Find Highlight (similar to Telescope grep)" },
     -- They are derivated from the default keymaps, see README.md to github repo for documentation
     { "f<C-H>", "<cmd>Hi><CR>", desc = "Next Recently Set Highlight" },

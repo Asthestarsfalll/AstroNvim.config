@@ -260,4 +260,20 @@ return {
       }
     end,
   },
+  {
+    "HallerPatrick/py_lsp.nvim",
+    event = "User TrueLoad",
+    config = function()
+      require("py_lsp").setup {
+        enhanced_diff_hl = true,
+        host_python = "/usr/bin",
+      }
+    end,
+  },
+  {
+    "MysticalDevil/inlay-hints.nvim",
+    event = "LspAttach",
+    dependencies = { "neovim/nvim-lspconfig" },
+    config = function() require("inlay-hints").setup() end,
+  },
 }
