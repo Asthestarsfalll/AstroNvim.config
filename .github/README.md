@@ -1,3 +1,5 @@
+see AstroNvim 4+ [config](https://github.com/Asthestarsfalll/nvim-config)
+
 # AstroNvim User Configuration Example
 
 A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
